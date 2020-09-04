@@ -19,9 +19,21 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="666e39fb-a37d-44ec-9502-ffa9e140b45e" name="默认的" comment="添加数据库连接组件，">
-      <change afterPath="$PROJECT_DIR$/serializer/response.go" afterDir="false" />
+    <list default="true" id="666e39fb-a37d-44ec-9502-ffa9e140b45e" name="默认的" comment="添加通用返回数据结构">
+      <change afterPath="$PROJECT_DIR$/init.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/middleware/cors.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/middleware/jwt.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/TestModel.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/user_service.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2ca2eeeb-86a9-4e0b-be33-bc98a9ae584a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2ca2eeeb-86a9-4e0b-be33-bc98a9ae584a.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/test.go" beforeDir="false" afterPath="$PROJECT_DIR$/controller/test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/init.go" beforeDir="false" afterPath="$PROJECT_DIR$/database/init.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/UserModel.go" beforeDir="false" afterPath="$PROJECT_DIR$/model/UserModel.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +56,7 @@
   </component>
   <component name="ProjectId" id="1gznAGAlKggNlPZCEge6RjY1HPP" />
   <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
+    <ConfirmationsSetting value="2" id="新增" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -66,6 +78,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -97,7 +110,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599181744645</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="添加通用返回数据结构">
+      <created>1599183331842</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1599183331842</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,7 +138,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="文档" />
     <MESSAGE value="添加数据库连接组件，" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加数据库连接组件，" />
+    <MESSAGE value="添加通用返回数据结构" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加通用返回数据结构" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
@@ -128,13 +149,29 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="182" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1599133174263" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1599181746255">
+    <state x="737" y="225" key="#com.intellij.ide.util.MemberChooser" timestamp="1599186759737">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1599181746255" />
-    <state x="775" y="336" width="370" height="370" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1599133198312">
+    <state x="737" y="225" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1599186759737" />
+    <state x="461" y="164" key="SettingsEditor" timestamp="1599189515096">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="775" y="336" width="370" height="370" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1599133198312" />
+    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1599189515096" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1599183333848">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1599183333848" />
+    <state x="775" y="336" width="441" height="350" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1599191652934">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="775" y="336" width="441" height="350" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1599191652934" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1599204351964">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1599204351964" />
+    <state x="682" y="353" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1599191665732">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="682" y="353" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1599191665732" />
   </component>
 </project>

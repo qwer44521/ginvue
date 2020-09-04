@@ -766,46 +766,66 @@ SELECT|sys.sys_config:null
       <ObjectGrants>ALL PRIVILEGES!
 </ObjectGrants>
     </user>
-    <table id="238" parent="2" name="qs_users"/>
-    <column id="239" parent="238" name="id">
+    <table id="238" parent="2" name="qs_test"/>
+    <table id="239" parent="2" name="qs_users"/>
+    <column id="240" parent="238" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="240" parent="238" name="user_name">
+    <column id="241" parent="238" name="name">
+      <Position>2</Position>
+      <DataType>varchar(255)|0s</DataType>
+    </column>
+    <column id="242" parent="238" name="pwd">
+      <Position>3</Position>
+      <DataType>varchar(255)|0s</DataType>
+    </column>
+    <key id="243" parent="238" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="244" parent="239" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>null</SequenceIdentity>
+    </column>
+    <column id="245" parent="239" name="user_name">
       <Position>2</Position>
       <Comment>用户名</Comment>
       <DataType>varchar(255)|0s</DataType>
     </column>
-    <column id="241" parent="238" name="password">
+    <column id="246" parent="239" name="password">
       <Position>3</Position>
       <Comment>用户密码</Comment>
       <DataType>varchar(255)|0s</DataType>
     </column>
-    <column id="242" parent="238" name="time">
+    <column id="247" parent="239" name="time">
       <Position>4</Position>
       <Comment>登录时间</Comment>
       <DataType>int(11)|0s</DataType>
     </column>
-    <column id="243" parent="238" name="status">
+    <column id="248" parent="239" name="status">
       <Position>5</Position>
       <Comment>状态：0删除   1：正常</Comment>
       <DataType>tinyint(2)|0s</DataType>
     </column>
-    <column id="244" parent="238" name="created_at">
+    <column id="249" parent="239" name="created_at">
       <Position>6</Position>
       <DataType>datetime(6)|0s</DataType>
     </column>
-    <column id="245" parent="238" name="updated_at">
+    <column id="250" parent="239" name="updated_at">
       <Position>7</Position>
       <DataType>datetime(6)|0s</DataType>
     </column>
-    <column id="246" parent="238" name="deleted_at">
+    <column id="251" parent="239" name="deleted_at">
       <Position>8</Position>
       <DataType>datetime(6)|0s</DataType>
     </column>
-    <key id="247" parent="238" name="PRIMARY">
+    <key id="252" parent="239" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
