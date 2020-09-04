@@ -19,17 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="666e39fb-a37d-44ec-9502-ffa9e140b45e" name="默认的" comment="文档">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controller/test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/init.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/UserModel.go" afterDir="false" />
+    <list default="true" id="666e39fb-a37d-44ec-9502-ffa9e140b45e" name="默认的" comment="添加数据库连接组件，">
+      <change afterPath="$PROJECT_DIR$/serializer/response.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +43,9 @@
     <option name="indexEntireGoPath" value="false" />
   </component>
   <component name="ProjectId" id="1gznAGAlKggNlPZCEge6RjY1HPP" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -88,7 +83,21 @@
       <option name="project" value="LOCAL" />
       <updated>1599127097171</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="添加数据库连接组件，">
+      <created>1599181725278</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1599181725278</updated>
+    </task>
+    <task id="LOCAL-00003" summary="添加数据库连接组件，">
+      <created>1599181744645</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1599181744645</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -108,7 +117,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="文档" />
-    <option name="LAST_COMMIT_MESSAGE" value="文档" />
+    <MESSAGE value="添加数据库连接组件，" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加数据库连接组件，" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
@@ -118,10 +128,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="182" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1599133174263" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1599127102798">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1599181746255">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1599127102798" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1599181746255" />
     <state x="775" y="336" width="370" height="370" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1599133198312">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
