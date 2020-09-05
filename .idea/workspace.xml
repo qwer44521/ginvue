@@ -20,20 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="666e39fb-a37d-44ec-9502-ffa9e140b45e" name="默认的" comment="添加通用返回数据结构">
-      <change afterPath="$PROJECT_DIR$/init.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/middleware/cors.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/middleware/jwt.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/TestModel.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/user_service.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2ca2eeeb-86a9-4e0b-be33-bc98a9ae584a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2ca2eeeb-86a9-4e0b-be33-bc98a9ae584a.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/test.go" beforeDir="false" afterPath="$PROJECT_DIR$/controller/test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/init.go" beforeDir="false" afterPath="$PROJECT_DIR$/database/init.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/UserModel.go" beforeDir="false" afterPath="$PROJECT_DIR$/model/UserModel.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middleware/jwt.go" beforeDir="false" afterPath="$PROJECT_DIR$/middleware/jwt.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +105,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599183331842</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="添加通用返回数据结构">
+      <created>1599222255304</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1599222255304</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,10 +152,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1599189515096" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1599183333848">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1599222257217">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1599183333848" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1599222257217" />
     <state x="775" y="336" width="441" height="350" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1599191652934">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -62,12 +62,14 @@ func SetsignKey(key string) string {
 	SignKey = key
 	return SignKey
 }
+
+//创建token
 func (j *JWT) CreateToken(claims CustomClaims) (string, error) {
 	token := jwt.NewWithClaims(jwt.SigningMethodHS256, claims)
 	return token.SignedString([]byte(SignKey))
 }
 
-// 解析Tokne
+// 解析Token
 func (j *JWT) ParseToken(tokenString string) (*CustomClaims, error) {
 	token, err := jwt.ParseWithClaims(tokenString, &CustomClaims{}, func(token *jwt.Token) (interface{}, error) {
 		return []byte(SignKey), nil
