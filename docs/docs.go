@@ -24,7 +24,38 @@ var doc = `{
     },
     "host": "{{.Host}}",
     "basePath": "{{.BasePath}}",
-    "paths": {}
+    "paths": {
+        "/": {
+            "get": {
+                "description": "描述信息",
+                "summary": "测试接口",
+                "responses": {
+                    "200": {
+                        "description": "code\":200,\"data\":null,\"msg\":\"\"}",
+                        "schema": {
+                            "$ref": "#/definitions/controller.Res"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "controller.Res": {
+            "type": "object",
+            "properties": {
+                "code": {
+                    "type": "integer"
+                },
+                "data": {
+                    "type": "object"
+                },
+                "msg": {
+                    "type": "string"
+                }
+            }
+        }
+    }
 }`
 
 type swaggerInfo struct {
@@ -42,7 +73,7 @@ var SwaggerInfo = swaggerInfo{
 	Host:        "",
 	BasePath:    "",
 	Schemes:     []string{},
-	Title:       "",
+	Title:       "测试数据12",
 	Description: "",
 }
 

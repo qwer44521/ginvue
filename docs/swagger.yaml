@@ -1,5 +1,25 @@
+definitions:
+  controller.Res:
+    properties:
+      code:
+        type: integer
+      data:
+        type: object
+      msg:
+        type: string
+    type: object
 info:
   contact: {}
   license: {}
-paths: {}
+  title: 测试数据12
+paths:
+  /:
+    get:
+      description: 描述信息
+      responses:
+        "200":
+          description: code":200,"data":null,"msg":""}
+          schema:
+            $ref: '#/definitions/controller.Res'
+      summary: 测试接口
 swagger: "2.0"

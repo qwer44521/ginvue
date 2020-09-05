@@ -24,6 +24,8 @@ func Addadmin(c *gin.Context) {
 	}
 }
 
+//@title:管理员登录
+//
 //管理员登录
 func AdminLogin(c *gin.Context) {
 	var service service2.Adminlogin

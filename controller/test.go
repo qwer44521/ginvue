@@ -4,8 +4,31 @@ import (
 	"fmt"
 	"ginvue/database"
 	"ginvue/model"
+	"github.com/gin-gonic/gin"
 	"golang.org/x/crypto/bcrypt"
 )
+
+type Res struct {
+	Code int         `json:"code"`
+	Data interface{} `json:"data"`
+	Msg  string      `json:"msg"`
+}
+
+func returnMsg(ctx *gin.Context, code int, data interface{}, msg string) {
+	ctx.JSON(200, Res{
+		Code: code,
+		Data: data,
+		Msg:  msg,
+	})
+}
+
+func Test202(ctx *gin.Context) {
+	ctx.JSON(200, Res{
+		Code: 200,
+		Data: nil,
+		Msg:  "",
+	})
+}
 
 func Test() {
 	result := database.Db.Create(model.Test{

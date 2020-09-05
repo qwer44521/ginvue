@@ -6,6 +6,7 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
+//@title 测试数据12
 func main() {
 	database.Init()
 	r := router.Init()

@@ -1,8 +1,40 @@
 {
     "swagger": "2.0",
     "info": {
+        "title": "测试数据12",
         "contact": {},
         "license": {}
     },
-    "paths": {}
+    "paths": {
+        "/": {
+            "get": {
+                "description": "描述信息",
+                "summary": "测试接口",
+                "responses": {
+                    "200": {
+                        "description": "code\":200,\"data\":null,\"msg\":\"\"}",
+                        "schema": {
+                            "$ref": "#/definitions/controller.Res"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "controller.Res": {
+            "type": "object",
+            "properties": {
+                "code": {
+                    "type": "integer"
+                },
+                "data": {
+                    "type": "object"
+                },
+                "msg": {
+                    "type": "string"
+                }
+            }
+        }
+    }
 }
