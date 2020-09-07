@@ -3,32 +3,10 @@ package controller
 import (
 	"fmt"
 	"ginvue/database"
+	"ginvue/middleware"
 	"ginvue/model"
-	"github.com/gin-gonic/gin"
 	"golang.org/x/crypto/bcrypt"
 )
-
-type Res struct {
-	Code int         `json:"code"`
-	Data interface{} `json:"data"`
-	Msg  string      `json:"msg"`
-}
-
-func returnMsg(ctx *gin.Context, code int, data interface{}, msg string) {
-	ctx.JSON(200, Res{
-		Code: code,
-		Data: data,
-		Msg:  msg,
-	})
-}
-
-func Test202(ctx *gin.Context) {
-	ctx.JSON(200, Res{
-		Code: 200,
-		Data: nil,
-		Msg:  "",
-	})
-}
 
 func Test() {
 	result := database.Db.Create(model.Test{
@@ -64,4 +42,15 @@ func Test3() {
 	} else {
 		fmt.Println("ok")
 	}
+}
+func Testtoken() {
+	var j middleware.JWT
+	token := "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyLCJ1c2VyX25hbWUiOiJhZG1pbiIsImV4cCI6MTU5OTM5MDAwNywiaXNzIjoiZ29naW4iLCJuYmYiOjE1OTkzODU0MDd9.MfHNQtovzy0pUu3qW3e-daSLGJ8Rw6-k_KmwXm2aDtQ"
+	y, err := j.ParseToken(token)
+	if err != nil {
+		panic("错误信息")
+	}
+	fmt.Println(y.ID)
+	fmt.Printf("%#v", y)
+
 }

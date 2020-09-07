@@ -1,6 +1,7 @@
 package service
 
 import (
+	"fmt"
 	"ginvue/database"
 	"ginvue/middleware"
 	"ginvue/model"
@@ -13,13 +14,16 @@ import (
 
 //添加管理员
 type Administrators struct {
-	UserName string `form:"user_name" json:"user_name" binding:"required"`
+	UserName string `form:"user_name" json:"username" binding:"required"`
 	Password string `form:"password" json:"password" binding:"required"`
 	Nickname string `form:"nickname" json:"nickname"`
 }
 type Adminlogin struct {
-	UserName string `form:"user_name" json:"user_name" binding:"required"`
+	UserName string `form:"user_name" json:"username" binding:"required"`
 	Password string `form:"password" json:"password" binding:"required"`
+}
+type AdminInfo struct {
+	Token string `form:"token" json:"token" binding:"required"`
 }
 
 //添加管理员方法
@@ -42,12 +46,12 @@ func (s *Administrators) Addadmin() serializer.Response {
 	if err := database.Db.Model(&model.Administrators{}).Create(&u).Error; err != nil {
 		return serializer.Response{
 			Code: 0,
-			Msg:  "注册失败",
+			Msg:  "添加失败",
 		}
 	}
 	return serializer.Response{
 		Code: 1,
-		Msg:  "注册成功",
+		Msg:  "管理员添加成功",
 	}
 }
 
@@ -60,6 +64,13 @@ func (s *Adminlogin) Adminlogin() serializer.Response {
 		return serializer.Response{
 			Code: 0,
 			Msg:  "管理员不存在",
+		}
+	}
+	//验证密码是否准确
+	if bcrypt.CompareHashAndPassword([]byte(u.Password), []byte(s.Password)) != nil {
+		return serializer.Response{
+			Code: 0,
+			Msg:  "密码错误",
 		}
 	}
 	//生成token
@@ -80,8 +91,34 @@ func (s *Adminlogin) Adminlogin() serializer.Response {
 
 	}
 	return serializer.Response{
+		Code:  1,
+		Msg:   "登陆成功",
+		Token: token,
+	}
+}
+
+//获取用户的个人信息（包括用户名、昵称、角色名等等）
+func (s AdminInfo) AdminInfo() serializer.Response {
+	var u model.Administrators
+	var j middleware.JWT
+
+	//解析token
+	t, err := j.ParseToken(s.Token)
+	if err != nil {
+		panic("解析token失败")
+
+	}
+	if err := database.Db.Model(&model.Administrators{}).Where("id = ?", t.ID).First(&u).Error; err != nil {
+		return serializer.Response{
+			Code: 0,
+			Msg:  "数据返回失败",
+		}
+
+	}
+	fmt.Println(u)
+	return serializer.Response{
 		Code: 1,
-		Msg:  "登陆成功",
-		Data: token,
+		Msg:  "接收数据成功",
+		Data: u,
 	}
 }

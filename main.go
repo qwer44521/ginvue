@@ -8,6 +8,7 @@ import (
 
 //@title 测试数据12
 func main() {
+	//controller.Testtoken()
 	database.Init()
 	r := router.Init()
 	gin.SetMode(gin.DebugMode)

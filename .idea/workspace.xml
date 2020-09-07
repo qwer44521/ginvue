@@ -20,16 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="666e39fb-a37d-44ec-9502-ffa9e140b45e" name="默认的" comment="管理员添加接口   登录接口   路由添加完成&#10;添加swagger">
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controller/admin/admin.go" beforeDir="false" afterPath="$PROJECT_DIR$/controller/admin/admin.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controller/test.go" beforeDir="false" afterPath="$PROJECT_DIR$/controller/test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/docs.go" beforeDir="false" afterPath="$PROJECT_DIR$/docs/docs.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/swagger.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/swagger.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/swagger.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/swagger.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/router/admin_router.go" beforeDir="false" afterPath="$PROJECT_DIR$/router/admin_router.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/router/init.go" beforeDir="false" afterPath="$PROJECT_DIR$/router/init.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/serializer/response.go" beforeDir="false" afterPath="$PROJECT_DIR$/serializer/response.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/admin_service.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/admin_service.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/user_service.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/user_service.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,7 +141,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599302592397</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="swagger  API文档管理">
+      <created>1599312440293</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1599312440293</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -168,7 +174,8 @@
     <MESSAGE value="token生成  登录token验证" />
     <MESSAGE value="管理员添加登录接口" />
     <MESSAGE value="管理员添加接口   登录接口   路由添加完成&#10;添加swagger" />
-    <option name="LAST_COMMIT_MESSAGE" value="管理员添加接口   登录接口   路由添加完成&#10;添加swagger" />
+    <MESSAGE value="swagger  API文档管理" />
+    <option name="LAST_COMMIT_MESSAGE" value="swagger  API文档管理" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
@@ -194,10 +201,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1599311040239" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1599304506364">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1599312442696">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1599304506364" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1599312442696" />
     <state x="775" y="336" width="441" height="350" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1599191652934">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -206,6 +213,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="802" y="233" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1599275491269" />
+    <state x="757" y="390" key="data.grid.dml.preview.dialog" timestamp="1599385251541">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="757" y="390" key="data.grid.dml.preview.dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1599385251541" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1599204351964">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
