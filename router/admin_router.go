@@ -17,7 +17,6 @@ func AdminRouter(r *gin.Engine) {
 		g.POST("/addadmin", admin.Addadmin)
 		g.POST("/login", admin.AdminLogin)
 		g.POST("/admininfo", admin.AdminInfo)
-
 	}
 
 }

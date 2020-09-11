@@ -19,16 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="666e39fb-a37d-44ec-9502-ffa9e140b45e" name="默认的" comment="管理员添加接口   登录接口   路由添加完成&#10;添加swagger">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+    <list default="true" id="666e39fb-a37d-44ec-9502-ffa9e140b45e" name="默认的" comment="获取管理员信息">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controller/admin/admin.go" beforeDir="false" afterPath="$PROJECT_DIR$/controller/admin/admin.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/test.go" beforeDir="false" afterPath="$PROJECT_DIR$/controller/test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/router/admin_router.go" beforeDir="false" afterPath="$PROJECT_DIR$/router/admin_router.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/serializer/response.go" beforeDir="false" afterPath="$PROJECT_DIR$/serializer/response.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/admin_service.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/admin_service.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/user_service.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/user_service.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,7 +142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599312440293</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="获取管理员信息">
+      <created>1599466554000</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1599466554000</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -175,7 +176,8 @@
     <MESSAGE value="管理员添加登录接口" />
     <MESSAGE value="管理员添加接口   登录接口   路由添加完成&#10;添加swagger" />
     <MESSAGE value="swagger  API文档管理" />
-    <option name="LAST_COMMIT_MESSAGE" value="swagger  API文档管理" />
+    <MESSAGE value="获取管理员信息" />
+    <option name="LAST_COMMIT_MESSAGE" value="获取管理员信息" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
@@ -201,10 +203,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1599311040239" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1599312442696">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1599466557339">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1599312442696" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1599466557339" />
     <state x="775" y="336" width="441" height="350" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1599191652934">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
